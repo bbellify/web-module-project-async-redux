@@ -1,6 +1,6 @@
 import { FETCH_ERROR, FETCH_START, FETCH_SUCCESS } from "../actions"
 const initialState = {
-    comic: {},
+    meme: {},
     isFetching: false,
     error: ''
 }
@@ -10,21 +10,22 @@ export const reducer = (state = initialState, action) => {
         case(FETCH_START):
             return({
                 ...state,
-                comic: {},
+                meme: {},
                 isFetching: true,
                 error:''
             })
         case(FETCH_SUCCESS):
+            console.log(action.payload)
             return({
                 ...state,
-                comic: action.payload,
+                meme: action.payload,
                 isFetching: false,
                 error: ''
             })
         case(FETCH_ERROR):
             return({
                 ...state,
-                comic: {},
+                meme: {},
                 isFetching: false,
                 error: `Something went wrong: ${action.payload}`
             })
