@@ -15,7 +15,7 @@ export const reducer = (state = initialState, action) => {
                 error:''
             })
         case(FETCH_SUCCESS):
-            console.log(action.payload)
+            // console.log(action.payload)
             return({
                 ...state,
                 meme: action.payload,
