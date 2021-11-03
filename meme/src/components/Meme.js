@@ -23,7 +23,7 @@ const Meme = ({meme, isFetching, error, dispatch}) => {
 
 
     return(
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div className='cardWrapper' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <button onClick={handleClick}>Grab a template</button>
             <h3>{meme.name}</h3>
             <img 

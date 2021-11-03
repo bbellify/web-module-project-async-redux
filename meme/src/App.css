@@ -1,3 +1,18 @@
 .App {
   text-align: center;
+  width: 70%;
+  border: 1px solid blue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #EA6E7B
+}
+
+div {
+  border: 1px solid blue;
+}
+
+.cardWrapper {
+  padding: 3% 0;
 }
